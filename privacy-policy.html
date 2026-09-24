@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Homegrown Wealth Inc.</title>
+<meta name="robots" content="index,follow">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="apple-touch-icon" href="images/favicon.png">
+<meta name="theme-color" content="#0D6638">
+<link rel="canonical" href="https://homegrownwealthinc.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Homegrown Wealth Inc.">
+<meta property="og:title" content="Homegrown Wealth Inc. — Brokerage, Escrow, Mortgage">
+<meta property="og:description" content="A full-service real estate company in Beverly Hills. Brokerage, escrow, and mortgage under one roof.">
+<meta property="og:url" content="https://homegrownwealthinc.com/">
+<meta property="og:image" content="https://homegrownwealthinc.com/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Homegrown Wealth Inc. — Brokerage, Escrow, Mortgage">
+<meta name="twitter:description" content="A full-service real estate company in Beverly Hills. Brokerage, escrow, and mortgage under one roof.">
+<meta name="twitter:image" content="https://homegrownwealthinc.com/og-image.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Poppins:ital,wght@0,300;0,400;0,600;1,500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --green:#0D6638;
+    --green-deep:#084325;
+    --gold:#F8CC21;
+    --cream:#FEF3EA;
+    --cream-2:#F7E8DA;
+    --ink:#141414;
+    --muted:#5C5751;
+    --line:rgba(20,20,20,.14);
+    --line-light:rgba(254,243,234,.24);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+
+  body{margin:0;background:var(--cream);color:var(--ink);
+    font-family:"Poppins",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    font-size:16.5px;line-height:1.65;font-weight:300;-webkit-font-smoothing:antialiased}
+  h1,h2,h3{font-family:"Playfair Display",Georgia,serif;font-weight:500;line-height:1.08;margin:0}
+  p{margin:0 0 1em}
+  a{color:inherit}
+  img{max-width:100%;display:block}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 28px}
+  :focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+
+  .btn{display:inline-block;background:var(--gold);color:var(--ink);
+    font-weight:600;font-size:15px;padding:12px 22px;border:0;border-radius:2px;
+    text-decoration:none;cursor:pointer;font-family:"Poppins",sans-serif}
+  .btn:hover{background:#FFD949}
+  .btn-outline{background:transparent;color:var(--cream);border:1px solid var(--line-light)}
+  .btn-outline:hover{background:rgba(254,243,234,.1)}
+
+  /* header */
+  .bar{position:sticky;top:0;z-index:40;background:var(--cream);border-bottom:1px solid var(--line)}
+  .bar .wrap{display:flex;align-items:center;gap:26px;height:92px}
+  .bar .logo{height:64px;width:auto}
+  .bar nav{margin-left:auto;display:flex;align-items:center;gap:6px;font-size:15px;font-weight:400}
+  .nav-link,.menu-btn{
+    font:inherit;font-family:"Poppins",sans-serif;color:var(--ink);background:none;border:0;
+    padding:10px 14px;text-decoration:none;cursor:pointer;border-radius:2px;line-height:1;
+    display:inline-flex;align-items:center;gap:7px}
+  .nav-link:hover,.menu-btn:hover{background:rgba(13,102,56,.08)}
+  .menu-btn::after{content:"";width:7px;height:7px;border-right:1.6px solid var(--green);
+    border-bottom:1.6px solid var(--green);transform:rotate(45deg) translateY(-2px);transition:transform .18s}
+  .menu-btn[aria-expanded="true"]{background:rgba(13,102,56,.1)}
+  .menu-btn[aria-expanded="true"]::after{transform:rotate(-135deg) translateY(-2px)}
+  .menu{position:relative}
+  .submenu{position:absolute;top:calc(100% + 12px);left:0;min-width:250px;margin:0;padding:8px;
+    list-style:none;background:var(--cream);border:1px solid var(--line);border-top:3px solid var(--gold);
+    box-shadow:0 14px 34px rgba(20,20,20,.14);display:none;z-index:60}
+  .menu.open .submenu{display:block}
+  .submenu li{padding:0}
+  .submenu a{display:block;padding:10px 12px 4px;text-decoration:none;font-weight:400}
+  .submenu li span{display:block;padding:0 12px 10px;font-size:12.5px;color:var(--muted)}
+  .submenu li:hover a,.submenu a:focus-visible{color:var(--green)}
+  .submenu li:hover{background:rgba(13,102,56,.07)}
+
+  .menu-toggle{display:none;margin-left:auto;background:none;border:1px solid var(--line);
+    border-radius:2px;width:44px;height:40px;cursor:pointer;padding:0;
+    flex-direction:column;align-items:center;justify-content:center;gap:5px}
+  .menu-toggle span{display:block;width:20px;height:2px;background:var(--ink)}
+
+  @media(max-width:900px){
+    .bar .wrap{height:76px;flex-wrap:wrap}
+    .bar .logo{height:52px}
+    .bar .btn{display:none}
+    .menu-toggle{display:flex}
+    .bar nav{display:none;order:3;width:100%;flex-direction:column;align-items:stretch;
+      gap:0;padding:8px 0 18px;border-top:1px solid var(--line)}
+    .bar nav.open{display:flex}
+    .nav-link,.menu-btn{width:100%;justify-content:space-between;padding:14px 4px;
+      border-bottom:1px solid var(--line)}
+    .submenu{position:static;display:none;min-width:0;box-shadow:none;border:0;border-top:0;
+      background:rgba(13,102,56,.05);padding:6px 4px}
+    .menu.open .submenu{display:block}
+  }
+
+  /* keep sticky header from covering anchor targets */
+  [id]{scroll-margin-top:110px}
+
+  /* hero */
+  .hero{background:var(--cream);padding:70px 0 0}
+  .hero .wrap{display:grid;grid-template-columns:1fr 320px;gap:56px;align-items:center}
+  .hero h1{font-size:clamp(2.5rem,5.6vw,4.3rem);font-weight:700;letter-spacing:-.015em;max-width:15ch}
+  .hero .lede{font-size:clamp(1.02rem,1.7vw,1.2rem);color:var(--muted);max-width:46ch;margin-top:22px}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+  .hero-mark{width:100%;height:auto}
+  @media(max-width:900px){
+    .hero .wrap{grid-template-columns:1fr;gap:36px}
+    .hero-mark{max-width:210px;margin:0 auto}
+  }
+
+  /* roof band */
+  .band{margin-top:66px;background:var(--green)}
+  .band svg{display:block;width:100%;height:auto;background:var(--cream)}
+  .pillars{display:grid;grid-template-columns:repeat(3,1fr);color:var(--cream)}
+  .pillars div{padding:26px 20px;text-align:center;border-left:1px solid var(--line-light)}
+  .pillars div:first-child{border-left:0}
+  .pillars b{display:block;font-family:"Playfair Display",serif;font-weight:500;
+    font-size:clamp(1.15rem,2.4vw,1.7rem);color:var(--gold)}
+  .pillars small{display:block;font-size:13.5px;opacity:.85;margin-top:5px}
+  .covered{background:var(--green-deep);color:var(--cream);text-align:center;
+    padding:20px;font-family:"Playfair Display",serif;font-size:clamp(1.1rem,2.6vw,1.5rem)}
+  @media(max-width:620px){
+    .pillars{grid-template-columns:1fr}
+    .pillars div{border-left:0;border-top:1px solid var(--line-light);padding:18px}
+    .pillars div:first-child{border-top:0}
+  }
+
+  section{padding:84px 0}
+  .kicker{font-size:14.5px;color:var(--muted);margin:0 0 14px;font-weight:400}
+  h2{font-size:clamp(1.9rem,3.8vw,2.9rem);letter-spacing:-.01em;max-width:20ch}
+  .intro{max-width:58ch;margin-top:18px;color:var(--muted)}
+
+  .services{margin-top:50px;border-top:2px solid var(--gold)}
+  .service{display:grid;grid-template-columns:minmax(190px,1fr) 2.2fr;gap:36px;
+    padding:38px 0;border-bottom:1px solid var(--line)}
+  .service h3{font-size:clamp(1.4rem,2.9vw,2rem)}
+  .service .sub{font-size:13.5px;color:var(--muted);margin-top:10px}
+  .service ul{margin:14px 0 0;padding-left:18px;color:var(--muted)}
+  .service li{margin-bottom:6px}
+  @media(max-width:780px){.service{grid-template-columns:1fr;gap:12px}}
+
+  /* divisions */
+  .divisions{background:var(--cream-2)}
+  .div-row{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);
+    border:1px solid var(--line);margin-top:44px}
+  .div-cell{background:var(--cream-2);padding:38px 28px;display:flex;flex-direction:column;
+    align-items:center;justify-content:center;gap:16px;text-align:center;min-height:190px}
+  .div-cell img{max-height:58px;width:auto}
+  .div-cell .house-mark{max-height:92px}
+  .div-cell .name{margin-top:-4px}
+  .div-cell .name{font-family:"Playfair Display",serif;font-size:1.35rem}
+  .div-cell p{font-size:14px;color:var(--muted);margin:0}
+  @media(max-width:780px){.div-row{grid-template-columns:1fr}}
+
+  /* process */
+  .process{background:var(--green);color:var(--cream)}
+  .process .kicker{color:rgba(254,243,234,.75)}
+  .steps{margin-top:46px;display:grid;grid-template-columns:repeat(4,1fr)}
+  .step{padding:0 24px;border-left:1px solid var(--line-light)}
+  .step:first-child{padding-left:0;border-left:0}
+  .step .n{font-family:"Playfair Display",serif;font-size:15px;color:var(--gold);display:block;margin-bottom:12px}
+  .step h3{font-size:1.15rem;margin-bottom:8px}
+  .step p{font-size:14.5px;opacity:.86;margin:0}
+  @media(max-width:860px){
+    .steps{grid-template-columns:1fr;gap:26px}
+    .step,.step:first-child{padding:0 0 0 20px;border-left:1px solid var(--line-light)}
+  }
+
+  .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);
+    border:1px solid var(--line);margin-top:46px}
+  .why-grid div{background:var(--cream);padding:30px}
+  .why-grid h3{font-size:1.2rem;margin-bottom:10px}
+  .why-grid p{font-size:15px;color:var(--muted);margin:0}
+  @media(max-width:780px){.why-grid{grid-template-columns:1fr}}
+
+  .team{background:var(--cream)}
+  .team-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);
+    border:1px solid var(--line);margin-top:44px}
+  .person{background:var(--cream);padding:32px 30px}
+  .person h3{font-size:1.6rem}
+  .person .role{font-size:13.5px;color:var(--muted);margin:6px 0 18px;font-weight:400}
+  .person .detail{border-top:1px solid var(--line);padding:12px 0;grid-template-columns:90px 1fr;
+    gap:12px;font-size:14.5px;display:grid;margin:0}
+  .person .detail a{text-decoration:none;border-bottom:1px solid var(--gold)}
+  @media(max-width:780px){.team-grid{grid-template-columns:1fr}}
+
+
+  /* ---- photo slots: replace background-image with a real file ---- */
+  .photo{position:relative;overflow:hidden;background:var(--cream-2);
+    background-size:cover;background-position:center;border-radius:2px}
+  .photo:not(.has-art)::after{
+    content:attr(data-slot);position:absolute;inset:0;display:flex;align-items:center;
+    justify-content:center;text-align:center;padding:22px;font-size:12.5px;line-height:1.5;
+    color:var(--muted);border:2px dashed rgba(20,20,20,.28)}
+  .photo.photo-hero::after{display:none}
+
+  .hero-visual{position:relative;z-index:1}
+  .photo-hero{aspect-ratio:4/5;border:1px solid var(--line);box-shadow:0 18px 44px rgba(20,20,20,.15)}
+  .photo-hero .art{width:100%;height:100%;display:block;object-fit:cover}
+  .hero-visual::before{content:"";position:absolute;inset:18px -18px -18px 18px;border:2px solid var(--gold);z-index:-1}
+  .hero-badge{position:absolute;left:-34px;bottom:-26px;width:118px;height:auto;
+    filter:drop-shadow(0 6px 18px rgba(0,0,0,.18))}
+  @media(max-width:900px){
+    .hero-visual{max-width:300px;margin:0 auto}
+    .hero-badge{left:-14px;bottom:-18px;width:92px}
+  }
+
+  /* gable pattern divider */
+  .gable{display:block;width:100%;height:26px}
+
+  .avatar{width:104px;height:104px;border-radius:50%;margin-bottom:18px;
+    background:var(--cream-2);background-size:cover;background-position:center;
+    border:2px solid var(--gold);position:relative;overflow:hidden}
+  .avatar::after{content:attr(data-slot);position:absolute;inset:0;display:flex;
+    align-items:center;justify-content:center;text-align:center;padding:10px;
+    font-size:10.5px;line-height:1.3;color:var(--muted)}
+
+  /* office band */
+  .office{background:var(--green);color:var(--cream);padding:84px 0}
+  .office h2{color:var(--cream)}
+  .office-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:52px;align-items:center}
+  .photo-office{aspect-ratio:4/3;background:var(--green-deep);border:1px solid var(--line-light)}
+  .photo-office::after{color:rgba(254,243,234,.7);border-color:rgba(254,243,234,.35)}
+  @media(max-width:880px){.office-grid{grid-template-columns:1fr;gap:32px}}
+
+  .mapframe{margin-top:24px;border:1px solid var(--line-light);aspect-ratio:16/9;overflow:hidden}
+  .mapframe iframe{width:100%;height:100%;border:0;display:block;filter:saturate(.9)}
+
+  /* mid-page CTA */
+  .midcta{background:var(--gold);padding:54px 0}
+  .midcta-inner{display:flex;flex-wrap:wrap;gap:30px;align-items:center;justify-content:space-between}
+  .midcta h2{font-size:clamp(1.6rem,3.2vw,2.3rem);max-width:none}
+  .midcta p{margin:10px 0 0;max-width:46ch;font-size:15.5px}
+  .midcta-actions{display:flex;flex-wrap:wrap;gap:12px}
+  .midcta .btn{background:var(--green);color:var(--cream)}
+  .midcta .btn:hover{background:var(--green-deep)}
+  .midcta .btn-ghost{background:transparent;color:var(--ink);border:1.5px solid rgba(20,20,20,.45)}
+  .midcta .btn-ghost:hover{background:rgba(20,20,20,.07)}
+
+  /* sticky mobile action bar */
+  .mobilebar{display:none;position:fixed;left:0;right:0;bottom:0;z-index:70;
+    background:var(--cream);border-top:1px solid var(--line);
+    box-shadow:0 -6px 20px rgba(20,20,20,.12);
+    padding-bottom:env(safe-area-inset-bottom)}
+  .mobilebar a{flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;
+    padding:10px 4px 12px;text-decoration:none;font-size:11.5px;font-weight:600;color:var(--green)}
+  .mobilebar a.primary{background:var(--gold);color:var(--ink)}
+  .mobilebar svg{width:21px;height:21px}
+  @media(max-width:900px){
+    .mobilebar{display:flex}
+    body{padding-bottom:70px}
+  }
+
+  .consent{display:flex;gap:10px;align-items:flex-start;font-size:12px;font-weight:400;
+    color:var(--muted);line-height:1.5;margin:4px 0 18px}
+  .consent input{width:auto;margin-top:2px;flex:0 0 auto}
+
+  /* contact */
+  .contact{background:var(--cream-2)}
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}
+  @media(max-width:880px){.contact-grid{grid-template-columns:1fr;gap:40px}}
+  .field{margin-bottom:18px}
+  label{display:block;font-size:13.5px;font-weight:600;margin-bottom:6px}
+  input,select,textarea{width:100%;padding:12px 14px;font:inherit;font-size:16px;font-weight:400;
+    background:#fff;border:1px solid var(--line);border-radius:2px;color:var(--ink)}
+  textarea{min-height:118px;resize:vertical}
+  .note{font-size:13.5px;color:var(--muted)}
+  #formStatus{margin-top:14px;font-size:15px;font-weight:600;color:var(--green);display:none}
+  #formStatus.show{display:block}
+  .detail{border-top:1px solid var(--line);padding:15px 0;display:grid;
+    grid-template-columns:120px 1fr;gap:16px;font-size:15px}
+  .detail dt{color:var(--muted)}
+  .detail dd{margin:0}
+  @media(max-width:480px){.detail{grid-template-columns:1fr;gap:4px}}
+
+  footer{background:var(--green-deep);color:rgba(254,243,234,.8);padding:48px 0;font-size:13.5px}
+  footer .wrap{display:grid;grid-template-columns:1fr 1.5fr;gap:44px}
+  footer p{font-size:12.5px;line-height:1.6;margin:0 0 12px;color:rgba(254,243,234,.66)}
+  footer .eho{display:flex;align-items:center;gap:10px;color:var(--gold);
+    font-size:13px;font-weight:600;margin-bottom:16px}
+  footer img{height:34px;width:auto;margin-bottom:14px}
+  footer a{color:var(--cream)}
+  @media(max-width:640px){footer .wrap{grid-template-columns:1fr}}
+</style>
+<style>
+  .doc{padding:70px 0 90px}
+  .doc h1{font-size:clamp(2.2rem,5vw,3.2rem);font-weight:700;margin-bottom:6px}
+  .doc h2{font-size:1.35rem;margin:38px 0 12px;max-width:none}
+  .doc .wrap{max-width:780px}
+  .doc ul{color:var(--muted);padding-left:20px}
+  .doc li{margin-bottom:8px}
+  .doc p{color:var(--muted)}
+  .doc .intro{margin-bottom:8px}
+  footer p{color:rgba(254,243,234,.7);font-size:13px}
+</style>
+</head>
+<body>
+<header class="bar">
+  <div class="wrap">
+    <a href="index.html" aria-label="Homegrown Wealth Inc. home">
+      <img class="logo" src="images/logo-house.png" alt="Homegrown Wealth Inc.">
+    </a>
+    <a class="btn" href="index.html" style="margin-left:auto">Back to site</a>
+  </div>
+</header>
+
+<main class="doc">
+  <div class="wrap">
+    <p class="kicker">Last updated: September 24, 2026</p>
+    <h1>Privacy Policy</h1>
+    <p class="intro">This policy explains what Homegrown Wealth Inc. collects through this website, why, and what choices you have. <strong>DRAFT — review with counsel before publishing.</strong></p>
+
+    <h2>Who we are</h2>
+    <p>Homegrown Wealth Inc., including its Homegrown Wealth Real Estate brokerage, HW Escrow, and Homegrown Wealth Loan divisions, 9595 Wilshire Blvd., Suite 406, Beverly Hills, CA 90212, with a branch office at 407 N Maple Dr., Ground Floor, Beverly Hills, CA 90210. Phone 310-853-1438. Email Annie@homegrownwealthinc.com.</p>
+
+    <h2>Information we collect</h2>
+    <ul>
+      <li><strong>Information you give us.</strong> Name, email address, phone number, the service you're interested in, and anything you type into the message field of our contact form.</li>
+      <li><strong>Information collected automatically.</strong> IP address, browser type, device type, pages viewed, and referring site, gathered through standard web server logs and any analytics tool we use.</li>
+      <li><strong>Third-party embeds.</strong> This site embeds a Google Map. Google may set cookies and collect data when that map loads. See Google's privacy policy for details.</li>
+    </ul>
+    <p>We do not collect Social Security numbers, financial account details, or loan application data through this website. That information is collected separately through secure application systems once you begin a transaction, and is governed by the privacy notice we provide at that time.</p>
+
+    <h2>How we use it</h2>
+    <ul>
+      <li>To respond to your inquiry and provide brokerage, escrow, or mortgage services</li>
+      <li>To contact you by phone, text, or email about your request</li>
+      <li>To maintain records required by California real estate and lending regulations</li>
+      <li>To improve the website and understand how visitors use it</li>
+    </ul>
+
+    <h2>Text messaging</h2>
+    <p>If you check the consent box on our form, you agree to receive calls and text messages from us about your inquiry. Message and data rates may apply. Message frequency varies. Reply STOP to opt out or HELP for help. Consent is not a condition of purchasing any property or obtaining any service. We do not sell or share mobile numbers or SMS consent with third parties for marketing.</p>
+
+    <h2>How we share information</h2>
+    <p>We do not sell your personal information. We share it only with:</p>
+    <ul>
+      <li>Our affiliated divisions, when your transaction involves more than one of them</li>
+      <li>Service providers who operate our website, email, and customer records systems</li>
+      <li>Transaction parties such as lenders, title companies, and escrow officers, where necessary to complete your transaction</li>
+      <li>Regulators, auditors, or law enforcement where required by law</li>
+    </ul>
+
+    <h2>Affiliated business arrangement</h2>
+    <p>Homegrown Wealth Inc., Homegrown Wealth Loan, and HW Escrow are affiliated companies. A referral between them may provide a financial or other benefit to Homegrown Wealth Inc. You are not required to use any affiliated company. You receive a separate Affiliated Business Arrangement Disclosure Statement at the time of referral.</p>
+
+    <h2>Your California privacy rights</h2>
+    <p>If you are a California resident, the California Consumer Privacy Act gives you the right to:</p>
+    <ul>
+      <li>Know what personal information we have collected about you and how we use it</li>
+      <li>Request deletion of your personal information, subject to legal record-keeping requirements</li>
+      <li>Request correction of inaccurate personal information</li>
+      <li>Opt out of the sale or sharing of personal information (we do not sell or share it)</li>
+      <li>Be free from discrimination for exercising these rights</li>
+    </ul>
+    <p>To exercise any of these rights, email Annie@homegrownwealthinc.com or call 310-853-1438. We will verify your identity before acting on a request.</p>
+    <p>Note: information collected in connection with a mortgage transaction may also be covered by the Gramm-Leach-Bliley Act and our separate financial privacy notice. [CONFIRM WHICH NOTICE APPLIES WITH COUNSEL.]</p>
+
+    <h2>How long we keep it</h2>
+    <p>We retain inquiry records for two to three years and transaction records for the period required by California Department of Real Estate and federal lending rules, generally three years or longer. [CONFIRM RETENTION PERIODS WITH COUNSEL.]</p>
+
+    <h2>Security</h2>
+    <p>We use reasonable administrative and technical safeguards to protect the information we hold. No method of transmission over the internet is completely secure, so please do not send sensitive financial information through our website contact form.</p>
+
+    <h2>Children</h2>
+    <p>This website is not directed to children under 13 and we do not knowingly collect information from them.</p>
+
+    <h2>Changes</h2>
+    <p>We may update this policy. The date at the top reflects the most recent revision.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy: Annie@homegrownwealthinc.com · 310-853-1438 · 9595 Wilshire Blvd., Suite 406, Beverly Hills, CA 90212.</p>
+
+    <p class="note" style="margin-top:34px">This is a drafted template, not legal advice. Have counsel review before it goes live.</p>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <img src="images/wordmark-light.png" alt="Homegrown Wealth Real Estate">
+      <div>Brokerage · Escrow · Mortgage</div>
+    </div>
+    <div>
+      <p>© <span id="yr">2026</span> Homegrown Wealth Inc. · <a href="index.html">Back to site</a></p>
+    </div>
+  </div>
+</footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>
